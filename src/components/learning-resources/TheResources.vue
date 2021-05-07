@@ -1,9 +1,15 @@
 <template>
-  <base-card>
-    <base-button @click="setSelectedTab('stored-resources')"
+  <base-card class="change-tabs">
+    <base-button
+      @click="setSelectedTab('stored-resources')"
+      type="button"
+      mode="change"
       >Stored Resources</base-button
     >
-    <base-button @click="setSelectedTab('add-resource')"
+    <base-button
+      @click="setSelectedTab('add-resource')"
+      type="button"
+      mode="change"
       >Add Resource</base-button
     >
   </base-card>
@@ -50,3 +56,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+.change-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+</style>
