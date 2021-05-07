@@ -1,33 +1,15 @@
 <template>
-<the-header title="Todo List"></the-header>
-  <stored-resources :resources="storedResources"></stored-resources>
+  <the-header title="Todo List"></the-header>
+  <the-resources></the-resources>
 </template>
 
 <script>
-import StoredResources from './components/learning-resources/StoredResources.vue';
 import TheHeader from './components/Layouts/TheHeader.vue';
+import TheResources from './components/learning-resources/TheResources.vue';
 export default {
   components: {
-    StoredResources,
     TheHeader,
-  },
-  data() {
-    return {
-      storedResources: [
-        {
-          id: 'official-guide',
-          title: 'Official Guide',
-          description: 'The Official VueJS documentation!',
-          link: 'https://www.vuejs.org'
-        },
-        {
-          id: 'google',
-          title: 'Google',
-          description: 'Learn how to google stuff!',
-          link: 'https://www.google.com'
-        }
-      ]
-    };
+    TheResources
   }
 };
 </script>
