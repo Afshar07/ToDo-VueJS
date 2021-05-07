@@ -1,15 +1,15 @@
 <template>
   <li>
-    <div>
+    <base-card>
       <header>
         <h3>{{ title }}</h3>
         <button>Delete</button>
       </header>
-    </div>
-    <p>{{ description }}</p>
-    <nav>
-      <a :href="link" target="_blank">View Resource</a>
-    </nav>
+      <p>{{ description }}</p>
+      <nav>
+        <a :href="link" target="_blank">View Resource</a>
+      </nav>
+    </base-card>
   </li>
 </template>
 
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style scoped>
-  li {
+li {
   margin: auto;
   max-width: 40rem;
 }
