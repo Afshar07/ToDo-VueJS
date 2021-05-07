@@ -49,4 +49,17 @@ a:hover,
 a:active {
   color: #c89300;
 }
+button {
+  border: none;
+  width: 6vw;
+  height: 4vh;
+  background-color: rgba(160, 0, 0, 0.84);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+}
+button:hover {
+  background-color: rgb(160, 0, 0);
+
+}
 </style>
