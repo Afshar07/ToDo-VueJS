@@ -23,4 +23,20 @@ export default {
 .delete:hover {
   background-color: rgb(160, 0, 0);
 }
+.change{
+  border: none;
+  width: 15vw;
+  height: 7vh;
+  background-color: rgba(0, 147, 173, 0.808);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.change:hover{
+  background-color: rgba(0, 147, 173);
+
+}
+
+
 </style>
