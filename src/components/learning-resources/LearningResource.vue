@@ -3,7 +3,7 @@
     <base-card>
       <header>
         <h3>{{ title }}</h3>
-        <button>Delete</button>
+        <button class="delete">Delete</button>
       </header>
       <p>{{ description }}</p>
       <nav>
@@ -49,7 +49,7 @@ a:hover,
 a:active {
   color: #c89300;
 }
-button {
+.delete {
   border: none;
   width: 6vw;
   height: 4vh;
@@ -58,7 +58,7 @@ button {
   cursor: pointer;
   border-radius: 30px;
 }
-button:hover {
+.delete:hover {
   background-color: rgb(160, 0, 0);
 
 }
