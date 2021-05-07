@@ -1,12 +1,15 @@
 <template>
+<the-header title="Todo List"></the-header>
   <stored-resources :resources="storedResources"></stored-resources>
 </template>
 
 <script>
 import StoredResources from './components/learning-resources/StoredResources.vue';
+import TheHeader from './components/Layouts/TheHeader.vue';
 export default {
   components: {
     StoredResources,
+    TheHeader,
   },
   data() {
     return {
