@@ -27,7 +27,7 @@ export default {
   border: none;
   width: 15vw;
   height: 7vh;
-  background-color: rgba(0, 147, 173, 0.808);
+  background-color: rgba(0, 147, 173, 0.6);
   color: #fff;
   font-size: 1rem;
   border-radius: 20px;
