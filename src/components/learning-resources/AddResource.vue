@@ -16,13 +16,7 @@
       </div>
       <div class="form-control">
         <label for="link">Link</label>
-        <input
-          type="url"
-          id="link"
-          name="link"
-          ref="linkInput"
-          required="false"
-        />
+        <input type="url" id="link" name="link" ref="linkInput" />
       </div>
       <div>
         <base-button type="submit" mode="add">Add Task</base-button>
