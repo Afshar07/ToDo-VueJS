@@ -3,13 +3,13 @@
     <base-button
       @click="setSelectedTab('stored-resources')"
       type="button"
-      mode="change"
+      :mode="StoredResourceButtonClass"
       >Stored Resources</base-button
     >
     <base-button
       @click="setSelectedTab('add-resource')"
       type="button"
-      mode="change"
+      :mode="AddResourceButtonClass"
       >Add Resource</base-button
     >
   </base-card>
@@ -43,6 +43,16 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    StoredResourceButtonClass() {
+      return this.selectedTab === 'stored-resources'
+        ? 'change selected'
+        : 'change';
+    },
+    AddResourceButtonClass() {
+      return this.selectedTab === 'add-resource' ? 'change selected' : 'change';
+    }
   },
   methods: {
     setSelectedTab(tab) {
