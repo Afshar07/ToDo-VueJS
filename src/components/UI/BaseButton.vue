@@ -1,6 +1,6 @@
 <template>
   <button :type="type" :class="mode">
-      <slot></slot>
+    <slot></slot>
   </button>
 </template>
 
@@ -23,7 +23,7 @@ export default {
 .delete:hover {
   background-color: rgb(160, 0, 0);
 }
-.change{
+.change {
   border: none;
   width: 15vw;
   height: 7vh;
@@ -33,10 +33,10 @@ export default {
   border-radius: 20px;
   cursor: pointer;
 }
-.change:hover{
+.change:hover {
   background-color: rgba(0, 147, 173);
-
 }
-
-
+.selected {
+  background-color: rgb(0, 90, 105) !important;
+}
 </style>
