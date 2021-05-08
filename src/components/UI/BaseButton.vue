@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style scoped>
+button:focus {
+  outline: none;
+}
 .delete {
   border: none;
   width: 6vw;
@@ -38,5 +41,18 @@ export default {
 }
 .selected {
   background-color: rgb(0, 90, 105) !important;
+}
+.add {
+  width: 9vw;
+  height: 5vh;
+  border: none;
+  background-color: rgba(0, 117, 53, 0.795);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.add:hover {
+  background-color: rgba(0, 117, 53);
 }
 </style>
