@@ -4,13 +4,13 @@
       @click="setSelectedTab('stored-resources')"
       type="button"
       :mode="StoredResourceButtonClass"
-      >Stored Resources</base-button
+      >Stored Tasks</base-button
     >
     <base-button
       @click="setSelectedTab('add-resource')"
       type="button"
       :mode="AddResourceButtonClass"
-      >Add Resource</base-button
+      >Add Tasks</base-button
     >
   </base-card>
 
@@ -31,13 +31,13 @@ export default {
       storedResources: [
         {
           id: 'official-guide',
-          title: 'Official Guide',
+          title: 'Read Official Guide',
           description: 'The Official VueJS documentation!',
           link: 'https://www.vuejs.org'
         },
         {
           id: 'google',
-          title: 'Google',
+          title: 'Google About Vue',
           description: 'Learn how to google stuff!',
           link: 'https://www.google.com'
         }
