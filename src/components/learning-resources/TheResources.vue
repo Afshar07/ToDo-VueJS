@@ -10,7 +10,7 @@
       @click="setSelectedTab('add-resource')"
       type="button"
       :mode="AddResourceButtonClass"
-      >Add Tasks</base-button
+      >Add Task</base-button
     >
   </base-card>
   <keep-alive>
